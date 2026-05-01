@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="description" content="Vedashree Enterprises – RO, Aqua & Water Purifier Service, Installation & Repair in Sangamner. Call 9975627439.">
+<meta name="theme-color" content="#0a2540">
+<title>Vedashree Enterprises – RO & Water Purifier Service, Sangamner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root {
+  --blue-dark:   #0a2540;
+  --blue-mid:    #1565c0;
+  --blue-accent: #1e88e5;
+  --blue-light:  #e3f0fd;
+  --teal:        #00897b;
+  --teal-light:  #e0f2f1;
+  --white:       #ffffff;
+  --off-white:   #f5f8fc;
+  --border:      #d5e5f5;
+  --text-main:   #0d1f33;
+  --text-muted:  #5a7a99;
+  --star:        #f59e0b;
+
+  --font-head: 'Sora', sans-serif;
+  --font-body: 'Noto Sans', sans-serif;
+
+  --r-sm:  8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-xl: 24px;
+
+  --gap-xs:  6px;
+  --gap-sm: 10px;
+  --gap-md: 16px;
+  --gap-lg: 24px;
+
+  --section-pad-v: 28px;
+  --section-pad-h: 16px;
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-main);
+  background: var(--off-white);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+ul { list-style: none; }
+
+/* ============================================================
+   LAYOUT HELPERS
+   ============================================================ */
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--section-pad-v) var(--section-pad-h);
+}
+.section-label {
+  font-size: 10px;
+  font-family: var(--font-head);
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--blue-mid);
+  margin-bottom: 4px;
+}
+h2.section-title {
+  font-family: var(--font-head);
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: var(--gap-md);
+  line-height: 1.25;
+}
+
+/* ============================================================
+   STICKY NAV
+   ============================================================ */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: var(--blue-dark);
+  padding: 10px var(--gap-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-sm);
+  box-shadow: 0 2px 12px rgba(10,37,64,0.3);
+}
+.nav-brand {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+}
+.nav-brand span {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.5px;
+}
+.nav-call {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #1e88e5;
+  color: #fff;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  min-height: 44px;
+  transition: background 0.2s;
+}
+.nav-call:active { background: #1565c0; }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  background: var(--blue-dark);
+  color: #fff;
+  padding: 28px var(--gap-md) 24px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.contact-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; right: -60px;
+  width: 200px; height: 200px;
+  background: rgba(30,136,229,0.12);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.9);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.hero h1 {
+  font-family: var(--font-head);
+  font-size: clamp(1.5rem, 6vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.hero h1 em {
+  font-style: normal;
+  color: #64b5f6;
+}
+.hero p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.78);
+  max-width: 480px;
+  margin-bottom: 18px;
+  line-height: 1.55;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.btn-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #1e88e5;
+  color: #fff;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 11px 22px;
+  border-radius: 25px;
+  min-height: 44px;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-hero-primary:active { background: #1565c0; transform: scale(0.97); }
+.btn-hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: rgba(255,255,255,0.85);
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 11px 18px;
+  border-radius: 25px;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  min-height: 44px;
+}
+.hero-rating-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--r-md);
+  max-width: 320px;
+}
+.stars { color: var(--star); font-size: 14px; letter-spacing: 1px; }
+.rating-text { font-size: 13px; color: rgba(255,255,255,0.85); }
+.rating-text strong { color: #fff; font-family: var(--font-head); }
+
+/* ============================================================
+   TRUST STRIP
+   ============================================================ */
+.trust-strip {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.trust-strip-inner {
+  display: flex;
+  gap: 0;
+  min-width: max-content;
+  padding: 0 var(--gap-md);
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--blue-mid);
+  padding: 10px 14px;
+  border-right: 1px solid var(--border);
+  white-space: nowrap;
+}
+.trust-item:last-child { border-right: none; }
+.trust-item .ti { font-size: 15px; }
+
+/* ============================================================
+   SERVICE CARDS
+   ============================================================ */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap-sm);
+}
+.service-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+.service-card:active { transform: scale(0.98); }
+.svc-icon { font-size: 22px; line-height: 1; margin-bottom: 2px; }
+.svc-name {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue-dark);
+  line-height: 1.3;
+}
+.svc-desc {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+.svc-price {
+  display: inline-block;
+  margin-top: 6px;
+  background: var(--blue-light);
+  color: var(--blue-mid);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+/* ============================================================
+   PRICING TABLE
+   ============================================================ */
+.pricing-wrap {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.pricing-table thead tr {
+  background: var(--blue-dark);
+  color: #fff;
+}
+.pricing-table th {
+  padding: 10px 12px;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 12px;
+  text-align: left;
+  letter-spacing: 0.3px;
+}
+.pricing-table th:last-child { text-align: right; }
+.pricing-table td {
+  padding: 9px 12px;
+  border-bottom: 1px solid #eef3fa;
+  color: var(--text-main);
+  font-size: 12.5px;
+}
+.pricing-table td:last-child {
+  text-align: right;
+  font-weight: 600;
+  color: var(--blue-mid);
+  white-space: nowrap;
+}
+.pricing-table tr:last-child td { border-bottom: none; }
+.pricing-table tr:hover td { background: var(--off-white); }
+.pricing-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  padding: 8px 12px;
+  border-top: 1px solid var(--border);
+  background: var(--off-white);
+}
+
+/* ============================================================
+   AMC PLANS
+   ============================================================ */
+.amc-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-sm);
+}.amc-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+.amc-card.featured { border-color: var(--blue-mid); border-width: 2px; }
+.amc-header {
+  padding: 12px 14px 10px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+.amc-card.featured .amc-header { background: var(--blue-dark); }
+.amc-name {
+  font-family: var(--font-head);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--blue-dark);
+  line-height: 1.2;
+}
+.amc-card.featured .amc-name { color: #fff; }
+.amc-subtitle {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.amc-card.featured .amc-subtitle { color: rgba(255,255,255,0.65); }
+.amc-price {
+  font-family: var(--font-head);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--blue-mid);
+  white-space: nowrap;
+}
+.amc-card.featured .amc-price { color: #64b5f6; }
+.amc-yr { font-size: 10px; font-weight: 400; color: var(--text-muted); }
+.amc-card.featured .amc-yr { color: rgba(255,255,255,0.5); }
+.popular-badge {
+  font-size: 9px;
+  font-weight: 600;
+  background: #1e88e5;
+  color: #fff;
+  padding: 2px 7px;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.amc-features {
+  padding: 10px 14px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px 10px;
+}
+.amc-feat {
+  font-size: 12px;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.amc-feat .chk { color: #00897b; font-size: 13px; }
+.amc-feat .crs { color: #e53935; font-size: 13px; }
+
+/* ============================================================
+   BRANDS
+   ============================================================ */
+.brands-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-xs);
+}
+.brand-pill {
+  background: #fff;
+  border: 1px solid var(--border);
+  color: var(--blue-dark);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* ============================================================
+   HOW IT WORKS
+   ============================================================ */
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.step {
+  display: flex;
+  gap: var(--gap-sm);
+  position: relative;
+  padding-bottom: 14px;
+}
+.step:last-child { padding-bottom: 0; }
+.step-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--blue-dark);
+  color: #fff;
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.step-connector {
+  width: 2px;
+  flex: 1;
+  background: var(--border);
+  margin-top: 4px;
+}
+.step:last-child .step-connector { display: none; }
+.step-body { padding-top: 4px; }
+.step-title {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue-dark);
+  margin-bottom: 2px;
+}
+.step-desc { font-size: 12px; color: var(--text-muted); }
+
+/* ============================================================
+   CONTACT / CTA
+   ============================================================ */
+.contact-section {
+  background: var(--blue-dark);
+  color: #fff;
+  padding: var(--section-pad-v) var(--gap-md);
+}
+.contact-section h2.section-title { color: #fff; }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap-sm);
+  margin-bottom: var(--gap-md);
+}
+.contact-item {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--r-md);
+  padding: 10px 12px;
+}
+.contact-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 3px;
+}
+.contact-value {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.4;
+}
+.contact-value a { color: #64b5f6; }
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+.btn-cta-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #1e88e5;
+  color: #fff;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 20px;
+  border-radius: 30px;
+  min-height: 52px;
+  transition: background 0.2s;
+}
+.btn-cta-call:active { background: #1565c0; }
+.btn-cta-wa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #25d366;
+  color: #fff;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 20px;
+  border-radius: 30px;
+  min-height: 52px;
+}
+.btn-cta-wa:active { background: #1ab855; }
+
+/* ============================================================
+   STICKY MOBILE CALL BAR
+   ============================================================ */
+.sticky-call {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 300;
+  padding: 10px var(--gap-md) max(10px, env(safe-area-inset-bottom));
+  background: var(--blue-dark);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  gap: var(--gap-sm);
+}
+.sticky-call a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 10px;
+  border-radius: 22px;
+  min-height: 48px;
+  color: #fff;
+}
+.sticky-call .sc-call { background: #1e88e5; }
+.sticky-call .sc-wa   { background: #25d366; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+  background: #061929;
+  color: rgba(255,255,255,0.45);
+  text-align: center;
+  padding: 14px var(--gap-md);
+  font-size: 11px;
+  line-height: 1.6;
+}
+footer strong { color: rgba(255,255,255,0.75); }
+
+/* ============================================================
+   GOOGLE RATING WIDGET
+   ============================================================ */
+#google-rating {
+  transition: opacity 0.3s;
+}
+
+/* ============================================================
+   RESPONSIVE — TABLET & DESKTOP
+   ============================================================ */
+@media (min-width: 480px) {
+  .amc-grid { grid-template-columns: repeat(2, 1fr); }
+  .cta-buttons { flex-direction: row; }
+}
+
+@media (min-width: 640px) {
+  :root {
+    --section-pad-v: 32px;
+    --section-pad-h: 24px;
+  }
+  .services-grid { grid-template-columns: repeat(3, 1fr); }
+  .amc-grid { grid-template-columns: repeat(3, 1fr); }
+  .contact-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 768px) {
+  .sticky-call { display: none !important; }
+  .services-grid { grid-template-columns: repeat(3, 1fr); }
+  .amc-grid { grid-template-columns: repeat(3, 1fr); }
+  .hero { padding: 48px var(--gap-md) 40px; }
+  .contact-section { padding: 40px var(--gap-md); }
+}
+
+@media (min-width: 960px) {
+  :root { --section-pad-h: 32px; }
+  .services-grid { grid-template-columns: repeat(4, 1fr); }
+  .amc-grid { grid-template-columns: repeat(5, 1fr); }
+}
+
+@media (min-width: 1200px) {
+  :root { --section-pad-h: 48px; }
+  .hero { padding: 56px var(--gap-md) 48px; }
+  .hero-inner, .contact-inner { padding: 0 var(--gap-md); }
+  .nav-brand { font-size: 15px; }
+  .nav-brand span { font-size: 12px; }
+}
+
+@media (min-width: 1440px) {
+  :root { --section-pad-h: 64px; }
+}
+
+/* Mobile only */
+@media (max-width: 767px) {
+  .sticky-call { display: flex; }
+  body { padding-bottom: 80px; }
+  .amc-features { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   ACCESSIBILITY
+   ============================================================ */
+:focus-visible {
+  outline: 3px solid #1e88e5;
+  outline-offset: 2px;
+}
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     ✏️  CONFIG — EDIT ALL YOUR BUSINESS DATA HERE ONLY
+     ============================================================ -->
+<script>
+const CONFIG = {
+
+  /* --- Business Info --- */
+  businessName:   "Vedashree Enterprises",
+  tagline:        "RO · Aqua · Water Purifier Solutions",
+  location:       "Sangamner, Ahmednagar, Maharashtra",
+  phone:          "9975627439",
+  whatsappMsg:    "Hi, I need RO service in Sangamner. Please help.",
+
+  /* --- Google Business (for rating fetch) ---
+       1. Go to Google Maps, search your business
+       2. In the URL, copy the Place ID (after "place/" or use
+          https://developers.google.com/maps/documentation/places/web-service/place-id to find it)
+       3. Get a free API key at console.cloud.google.com (Places API)
+       4. Paste both below. Until then, fallback rating shows.             */
+  googlePlaceId:  "",           // e.g. "ChIJN1t_tDeuEmsRUsoyG83frY4"
+  googleApiKey:   "",           // e.g. "AIzaSy..."
+  fallbackRating: { score: "4.8", count: "120+" },
+
+  /* --- Services --- */
+  services: [
+    { icon: "🔧", name: "RO Repair & Service",   desc: "Full checkup, filter cleaning & TDS water test",   price: "From ₹299" },
+    { icon: "⚙️", name: "Installation",           desc: "Wall mount, water & power connections",             price: "From ₹499" },
+    { icon: "📦", name: "Uninstallation",         desc: "Safe dismantling, packing & relocation ready",     price: "From ₹399" },
+    { icon: "📋", name: "AMC Plans",              desc: "Yearly contracts covering service, parts & more",   price: "From ₹999/yr" },
+    { icon: "🔩", name: "Spare Parts",            desc: "Membranes, pumps, filters, PCBs — all brands",     price: "Best Prices" },
+    { icon: "🏭", name: "Commercial RO",          desc: "Office & industrial systems installed & serviced",  price: "Call for Quote" },
+  ],
+
+  /* --- Service Pricing Table --- */
+  pricingRows: [
+    { service: "RO Repair / Routine Service",       price: "₹299 – ₹399" },
+    { service: "RO Installation",                   price: "₹499 – ₹599" },
+    { service: "RO Uninstallation",                 price: "₹399" },
+    { service: "RO Membrane (branded)",             price: "₹1,800 – ₹2,800" },
+    { service: "Booster Pump",                      price: "₹1,800 – ₹3,500" },
+    { service: "Inline Filters (set)",              price: "₹399 – ₹500" },
+    { service: "PCB / Control Board",               price: "₹549 – ₹3,000" },
+    { service: "Solenoid Valve",                    price: "₹249 – ₹450" },
+  ],
+  pricingNote: "* Prices vary by brand, model & distance. Call for exact quote.",
+
+  /* --- AMC Plans --- */
+  amcPlans: [
+    {
+      name: "AMC Basic",
+      subtitle: "Service only",
+      price: "₹999",
+      featured: false,
+      features: [
+        { label: "3 Periodical Services", included: true },
+        { label: "Filters",               included: false },
+        { label: "RO Membrane",           included: false },
+        { label: "Electric Parts",        included: false },
+      ]
+    },
+    {
+      name: "AMC Standard",
+      subtitle: "Service + Filters",
+      price: "₹2,425",
+      featured: true,
+      features: [
+        { label: "3 Periodical Services", included: true },
+        { label: "Filters (5 pcs)",       included: true },
+        { label: "RO Membrane",           included: false },
+        { label: "Electric Parts",        included: false },
+      ]
+    },
+    {
+      name: "AMC Premium",
+      subtitle: "Service + Filters + Membrane",
+      price: "₹4,000",
+      featured: false,
+      features: [
+        { label: "3 Periodical Services", included: true },
+        { label: "Filters (5 pcs)",       included: true },
+        { label: "RO + UF Membrane",      included: true },
+        { label: "Electric Parts",        included: false },
+      ]
+    },
+    {
+      name: "AMC Comprehensive",
+      subtitle: "Service + Filters + Membrane + Electrical",
+      price: "₹5,000",
+      featured: false,
+      features: [
+        { label: "3 Periodical Services", included: true },
+        { label: "Filters (5 pcs)",       included: true },
+        { label: "RO + UF Membrane",      included: true },
+        { label: "Electric Parts",        included: true },
+      ]
+    },
+    {
+      name: "AMC Complete",
+      subtitle: "All inclusive – faulty parts too",
+      price: "₹6,000",
+      featured: false,
+      features: [
+        { label: "3 Periodical Services", included: true },
+        { label: "Filters (5 pcs)",       included: true },
+        { label: "RO + UF Membrane",      included: true },
+        { label: "Electric + Faulty Parts",included: true },
+      ]
+    },
+  ],
+  amcNote: "* All AMC plans include additional services on intimation. Alkaline cartridge & body parts excluded.",
+
+  /* --- Brands Serviced --- */
+  brands: ["Kent RO","Aquaguard","Pureit","Livpure","V-Guard","Eureka Forbes","HUL","Whirlpool","Blue Star","AO Smith","Havells","Any Brand"],
+
+  /* --- How It Works Steps --- */
+  steps: [
+    { title: "Call or WhatsApp",     desc: "Reach us at 9975627439 — we respond fast." },
+    { title: "Schedule a Visit",     desc: "Pick a convenient time. We come to your home." },
+    { title: "Diagnose & Service",   desc: "Expert checks your purifier, explains the issue." },
+    { title: "Done & Water Tested",  desc: "Free TDS water quality test after every job." },
+  ],
+};
+</script>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav aria-label="Main navigation">
+  <div class="nav-brand">
+    <span id="nav-brand-name"></span>
+    <span id="nav-brand-tag"></span>
+  </div>
+  <a class="nav-call" id="nav-call-link" href="#" aria-label="Call us">
+    📞 <span id="nav-phone-display"></span>
+  </a>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-inner">
+    <div class="hero-badge">📍 <span id="hero-location"></span></div>
+    <h1>Pure Water.<br><em>Happy Family.</em></h1>
+    <p>Expert RO service, installation &amp; repair at your doorstep. Trusted by Sangamner homes &amp; offices.</p>
+    <div class="hero-actions">
+      <a class="btn-hero-primary" id="hero-call" href="#">📞 Book Service Now</a>
+      <a class="btn-hero-secondary" href="#services">View Services ↓</a>
+    </div>
+    <div class="hero-rating-bar" id="google-rating" aria-label="Google rating">
+      <div class="stars" id="rating-stars">★★★★★</div>
+      <div class="rating-text">
+        <strong id="rating-score"></strong> on Google
+        &nbsp;·&nbsp; <span id="rating-count"></span> reviews
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST STRIP
+     ============================================================ -->
+<div class="trust-strip" role="list" aria-label="Trust indicators">
+  <div class="trust-strip-inner">
+    <div class="trust-item" role="listitem"><span class="ti">✅</span> Same Day Service</div>
+    <div class="trust-item" role="listitem"><span class="ti">🏆</span> All Brands</div>
+    <div class="trust-item" role="listitem"><span class="ti">💧</span> Free TDS Test</div>
+    <div class="trust-item" role="listitem"><span class="ti">📍</span> Sangamner Based</div>
+    <div class="trust-item" role="listitem"><span class="ti">🔧</span> Genuine Parts</div>
+  </div>
+</div>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="section-label">What we do</div>
+    <h2 class="section-title" id="services-heading">Our Services</h2>
+    <div class="services-grid" id="services-grid" role="list"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+     ============================================================ -->
+<section id="pricing" aria-labelledby="pricing-heading" style="background:#fff; border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="section-label">Transparent pricing</div>
+    <h2 class="section-title" id="pricing-heading">Service Charges</h2>
+    <div class="pricing-wrap">
+      <table class="pricing-table" aria-label="Pricing table">
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody id="pricing-body"></tbody>
+      </table>
+      <div class="pricing-note" id="pricing-note"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     AMC PLANS
+     ============================================================ -->
+<section id="amc" aria-labelledby="amc-heading">
+  <div class="container">
+    <div class="section-label">Annual maintenance</div>
+    <h2 class="section-title" id="amc-heading">AMC Plans</h2>
+    <div class="amc-grid" id="amc-grid" role="list"></div>
+    <p style="font-size:11px;color:var(--text-muted);margin-top:8px;" id="amc-note"></p>
+  </div>
+</section>
+
+<!-- ============================================================
+     BRANDS
+     ============================================================ -->
+<section id="brands" style="background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);" aria-labelledby="brands-heading">
+  <div class="container">
+    <div class="section-label">We service</div>
+    <h2 class="section-title" id="brands-heading">All Major Brands</h2>
+    <div class="brands-wrap" id="brands-wrap" role="list"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section id="how" aria-labelledby="how-heading">
+  <div class="container">
+    <div class="section-label">Simple process</div>
+    <h2 class="section-title" id="how-heading">How It Works</h2>
+    <div class="steps-list" id="steps-list"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT / CTA
+     ============================================================ -->
+<section id="contact" class="contact-section" aria-labelledby="contact-heading">
+  <div class="contact-inner">
+    <div class="section-label" style="color:rgba(255,255,255,0.5);">Get in touch</div>
+    <h2 class="section-title" id="contact-heading">Book a Service Today</h2>
+    <div class="contact-grid" id="contact-grid"></div>
+    <div class="cta-buttons">
+      <a class="btn-cta-call" id="cta-call" href="#">📞 Call Now</a>
+      <a class="btn-cta-wa"   id="cta-wa"   href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <strong id="footer-name"></strong><br>
+  <span id="footer-location"></span> &nbsp;·&nbsp; All Rights Reserved © <span id="footer-year"></span>
+</footer>
+
+<!-- ============================================================
+     STICKY MOBILE CALL BAR
+     ============================================================ -->
+<div class="sticky-call" aria-label="Quick contact">
+  <a class="sc-call" id="sticky-call" href="#">📞 Call Now</a>
+  <a class="sc-wa"   id="sticky-wa"   href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+</div>
+
+<!-- ============================================================
+     JAVASCRIPT — RENDER FROM CONFIG
+     ============================================================ -->
+<script>
+(function () {
+  const C = CONFIG;
+  const phone    = C.phone;
+  const waLink   = `https://wa.me/91${phone}?text=${encodeURIComponent(C.whatsappMsg)}`;
+  const callLink = `tel:+91${phone}`;
+
+  /* --- Helpers --- */
+  function el(id) { return document.getElementById(id); }
+  function esc(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  /* --- Nav & Hero --- */
+  el('nav-brand-name').textContent  = C.businessName;
+  el('nav-brand-tag').textContent   = C.tagline;
+  el('nav-phone-display').textContent = phone;
+  el('nav-call-link').href          = callLink;
+  el('hero-location').textContent   = C.location;
+  el('hero-call').href              = callLink;
+
+  /* --- Footer --- */
+  el('footer-name').textContent     = `${C.businessName} – ${C.tagline}`;
+  el('footer-location').textContent = C.location;
+  el('footer-year').textContent     = new Date().getFullYear();
+
+  /* --- Sticky call bar --- */
+  el('sticky-call').href = callLink;
+  el('sticky-wa').href   = waLink;
+
+  /* --- CTA buttons --- */
+  el('cta-call').href = callLink;
+  el('cta-wa').href   = waLink;
+
+  /* --- Services --- */
+  const sg = el('services-grid');
+  C.services.forEach(s => {
+    sg.insertAdjacentHTML('beforeend', `
+      <div class="service-card" role="listitem">
+        <div class="svc-icon">${esc(s.icon)}</div>
+        <div class="svc-name">${esc(s.name)}</div>
+        <div class="svc-desc">${esc(s.desc)}</div>
+        <span class="svc-price">${esc(s.price)}</span>
+      </div>`);
+  });
+
+  /* --- Pricing table --- */
+  const pb = el('pricing-body');
+  C.pricingRows.forEach(r => {
+    pb.insertAdjacentHTML('beforeend', `
+      <tr>
+        <td>${esc(r.service)}</td>
+        <td>${esc(r.price)}</td>
+      </tr>`);
+  });
+  el('pricing-note').textContent = C.pricingNote;
+
+  /* --- AMC Plans --- */
+  const ag = el('amc-grid');
+  C.amcPlans.forEach(plan => {
+    /* Use createElement for security — avoids raw HTML injection risk */
+    const card = document.createElement('div');
+    card.className = plan.featured ? 'amc-card featured' : 'amc-card';
+    card.setAttribute('role', 'listitem');
+
+    const header = document.createElement('div');
+    header.className = 'amc-header';
+
+    const nameWrap = document.createElement('div');
+    const nameEl = document.createElement('div');
+    nameEl.className = 'amc-name';
+    nameEl.textContent = plan.name;
+    if (plan.featured) {
+      const badge = document.createElement('span');
+      badge.className = 'popular-badge';
+      badge.textContent = 'Popular';
+      nameEl.appendChild(badge);
+    }
+    const subEl = document.createElement('div');
+    subEl.className = 'amc-subtitle';
+    subEl.textContent = plan.subtitle;
+    nameWrap.appendChild(nameEl);
+    nameWrap.appendChild(subEl);
+
+    const priceWrap = document.createElement('div');
+    const priceEl = document.createElement('div');
+    priceEl.className = 'amc-price';
+    priceEl.textContent = plan.price;
+    const yrEl = document.createElement('div');
+    yrEl.className = 'amc-yr';
+    yrEl.textContent = '/year';
+    priceWrap.appendChild(priceEl);
+    priceWrap.appendChild(yrEl);
+
+    header.appendChild(nameWrap);
+    header.appendChild(priceWrap);
+
+    const feats = document.createElement('div');
+    feats.className = 'amc-features';
+    plan.features.forEach(f => {
+      const row = document.createElement('div');
+      row.className = 'amc-feat';
+      const chk = document.createElement('span');
+      chk.className = f.included ? 'chk' : 'crs';
+      chk.textContent = f.included ? '✓' : '✗';
+      const lbl = document.createTextNode(' ' + f.label);
+      row.appendChild(chk);
+      row.appendChild(lbl);
+      feats.appendChild(row);
+    });
+
+    card.appendChild(header);
+    card.appendChild(feats);
+    ag.appendChild(card);
+  });
+  el('amc-note').textContent = C.amcNote;
+
+  /* --- Brands --- */
+  const bw = el('brands-wrap');
+  C.brands.forEach(b => {
+    bw.insertAdjacentHTML('beforeend',
+      `<span class="brand-pill" role="listitem">💧 ${esc(b)}</span>`);
+  });
+
+  /* --- Steps --- */
+  const sl = el('steps-list');
+  C.steps.forEach((s, i) => {
+    sl.insertAdjacentHTML('beforeend', `
+      <div class="step">
+        <div class="step-line">
+          <div class="step-num">${i + 1}</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-body">
+          <div class="step-title">${esc(s.title)}</div>
+          <div class="step-desc">${esc(s.desc)}</div>
+        </div>
+      </div>`);
+  });
+
+  /* --- Contact grid --- */
+  const cg = el('contact-grid');
+  const contactItems = [
+    { label: 'Phone',    value: phone,       link: callLink },
+    { label: 'WhatsApp', value: phone,       link: waLink },
+    { label: 'Location', value: C.location,  link: null },
+    { label: 'Hours',    value: 'Mon–Sat 9am–7pm', link: null },
+  ];
+  contactItems.forEach(ci => {
+    const item = document.createElement('div');
+    item.className = 'contact-item';
+    const lbl = document.createElement('div');
+    lbl.className = 'contact-label';
+    lbl.textContent = ci.label;
+    const val = document.createElement('div');
+    val.className = 'contact-value';
+    if (ci.link) {
+      const a = document.createElement('a');
+      a.href = ci.link;
+      a.textContent = ci.value;
+      if (ci.link.startsWith('http')) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+      val.appendChild(a);
+    } else {
+      val.textContent = ci.value;
+    }
+    item.appendChild(lbl);
+    item.appendChild(val);
+    cg.appendChild(item);
+  });
+
+  /* --- Google Rating Fetch ---
+       Uses Google Places Details API.
+       Falls back to CONFIG.fallbackRating if API key/place ID not set.  */
+  function renderRating(score, count) {
+    const numScore = parseFloat(score);
+    const fullStars = Math.round(numScore);
+    const starsStr  = '★'.repeat(fullStars) + '☆'.repeat(5 - fullStars);
+    el('rating-stars').textContent  = starsStr;
+    el('rating-score').textContent  = numScore.toFixed(1);
+    el('rating-count').textContent  = count;
+  }
+
+  const fb = C.fallbackRating;
+  renderRating(fb.score, fb.count);   // show fallback immediately
+
+  if (C.googlePlaceId && C.googleApiKey) {
+    const url = `https://maps.googleapis.com/maps/api/place/details/json`
+      + `?place_id=${encodeURIComponent(C.googlePlaceId)}`
+      + `&fields=rating,user_ratings_total`
+      + `&key=${encodeURIComponent(C.googleApiKey)}`;
+    /* Direct call works from file:// or your own domain.
+       For hosted sites you may need a CORS proxy or server-side fetch. */
+    fetch(url)
+      .then(r => r.json())
+      .then(data => {
+        if (data.result) {
+          renderRating(
+            data.result.rating,
+            data.result.user_ratings_total + '+'
+          );
+        }
+      })
+      .catch(() => { /* silently keep fallback */ });
+  }
+
+})();
+</script>
+
+</body>
+</html>
